@@ -1,0 +1,19 @@
+To test only a single file
+pytest {{path of file in the directory}}
+
+To test only a single function in single file
+pytest {{path of file in the directory}}::{{name of function to be tested}}
+
+To show print statements printed in test file
+pytest -s
+
+Fixtures
+* Fixture can be used to initialize items/objects and can be passed as arguments to test cases
+* Fixtures are run once before each test case
+
+Mocktests
+* Can be used to create fake behaviour for example API calls
+
+Assert exceptions
+    with pytest.raises({{exception name}}):
+        {{Rest of the code}}
